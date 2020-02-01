@@ -116,3 +116,32 @@ html {
       font-weight: bold;
       text-align: center;
   }
+
+  /* @media screen and (min-width: 768px){
+      .main-content h1{
+          font-size: 4rem;
+      }
+      p:first-of-type{
+          margin-top: 0;
+          font-size: 2rem;
+      }
+      input{
+          height: 3rem;
+          font-size: 1.8rem;
+      }
+      button{
+          height: 3.8rem;
+          font-size: 2rem;
+      }
+      form{
+          margin-top: 0;
+      }
+      header a{
+          font-size: 2rem;
+      }
+  } */
+
+  .bg{
+      background: #4e4848;
+      padding: 1rem;
+  }
