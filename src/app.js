@@ -33,7 +33,8 @@ app.get('', (req, res) => {
 
 app.get('/help', (req, res)=>{
     res.render('help', {
-        name: 'Help'
+        title: 'Weather App | Help',
+        name: 'Wilfried'
     })
 })
 
@@ -82,12 +83,14 @@ app.get('/products', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        name: 'About'
+        title: 'Weather App | About',
+        name: 'Wilfried'
     })
 })
 
 app.get('/help/*', (req, res) => {
     res.render('404', {
+        title: 'Weather App | 404',
         error: 'Help article not found.',
         name: 'Wilfried'
     })
@@ -95,6 +98,7 @@ app.get('/help/*', (req, res) => {
 
 app.get('*', (req, res)=>{
     res.render('404', {
+        title: 'Weather App | 404',
         error: 'Page not found.',
         name: 'Wilfried'
     })
